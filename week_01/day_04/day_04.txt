@@ -1,0 +1,16 @@
+#Day 4 notes.
+
+
+def test_one_plus_one
+expected = 2
+actual = 1 + 1
+assert_equal(expected, actual)
+end
+
+
+fizzbuzz takes 1 interger as input
+
+return "Fizz" if number is divisible by 3
+return "Buzz" if number is div by 5
+return "fizzbuzz" if number div 3 and 5
+otherwise return number as string.

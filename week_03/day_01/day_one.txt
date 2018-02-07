@@ -1,0 +1,35 @@
+###Databases and SQL###
+DB's
+SQL
+CRUD
+Relationships
+
+A database should be able to CRUD.  Create, Read, Update and Delete.
+SQL is the language that allows us to do this.  Structured Query language.
+to do this, we use postgres.  psql (in terminal).  To exit psql, type \q.
+Postgres is open source and considered to be one of the better ones to use.
+Names of tables are always plural.  This is a convention but not necessary
+for it to work.
+CREATE DATABASE star_wars; to create a database.  must end with a semi colon.
+SQL key words are written in Caps.
+Now exit from psql (\q) back to terminal and create a file.
+VARCHAR must have single quotes in SQL
+In SQL NIL is NULL.
+
+#Create a file using touch star_wars.sql
+CREATE TABLE jedis (
+  name VARCHAR (255), (255 is the number of characters allowed, VARCHAR is various Characters)
+  age INT,
+  darkside BOOLEAN
+);
+
+DROP TABLE jedis; must be used each time that you update a table.
+this will delete the previous table name and replace it with the
+updated version.
+
+SERIAL is an integer that sequentialy runs automatically to create the id.
+
+to run the file enter      psql -d star_wars -f ./star_wars.sql
+
+#To read the table (print out the table)
+SELECT *  FROM jedis will return all of the data

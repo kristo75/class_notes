@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GenericsLibraryLab.iml" filepath="$PROJECT_DIR$/.idea/modules/GenericsLibraryLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GenericsLibraryLab_main.iml" filepath="$PROJECT_DIR$/.idea/modules/GenericsLibraryLab_main.iml" group="GenericsLibraryLab" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GenericsLibraryLab_test.iml" filepath="$PROJECT_DIR$/.idea/modules/GenericsLibraryLab_test.iml" group="GenericsLibraryLab" />
+    </modules>
+  </component>
+</project>

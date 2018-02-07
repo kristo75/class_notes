@@ -1,0 +1,127 @@
+###Day 4 notes###
+
+review getters and setters for methods.
+variables, arguments, condition, functions, parameter
+Enumeration and Blocks
+
+- Each vs loops
+
+chickens = [
+  "Margaret",
+  "Hetty",
+  "Mabel",
+  "Craig",
+  "Max"
+]
+  # for chicken in chickens
+  #   p chicken
+  # end
+
+chickens.each {|chicken| print chicken}
+
+
+-What are blocks
+
+
+- Other enumerable methods.
+
+pets = [
+  {
+    name: "Sir Percy",
+    pet_type: :cat,
+    breed: "British Shorthair",
+    price: 500
+  },
+  {
+    name: "King Bagdemagus",
+    pet_type: :cat,
+    breed: "British Shorthair",
+    price: 500
+  },
+  {
+    name: "Sir Lancelot",
+    pet_type: :dog,
+    breed: "Pomsky",
+    price: 1000,
+  },
+  {
+    name: "Arthur",
+    pet_type: :dog,
+    breed: "Husky",
+    price: 900,
+  },
+  {
+    name: "Tristan",
+    pet_type: :dog,
+    breed: "Basset Hound",
+    price: 800,
+  },
+  {
+    name: "Merlin",
+    pet_type: :cat,
+    breed: "Egyptian Mau",
+    price: 1500,
+  }
+]
+
+# Examples:
+
+## Print out all of the names using a loop
+for pet in pets
+  p pet[:name]
+end
+
+## Print out all of the names using an Enumerable method
+pets.each { |pet| p pet[:name] }
+
+## Find a pet by name using a loop and if statement
+result = nil
+
+for pet in pets
+  if pet[:name] == "Tristan"
+    result = pet
+  end
+end
+
+p result
+
+## Find a pet using an Enumerable method
+#
+# pets.each { |pet| p pet[:name] }
+
+
+
+# Tasks:
+## Using enumerable methods:
+
+## Find the pet which is a Husky
+find_husky = pets.find {|pet| pet[:breed] == "Husky"}
+p find_husky
+
+## Make an array of all of the pets' names
+all_pets_name = pets.map  {|pet| pet[:name]}
+  p all_pets_name
+
+
+## Find out if there are any pets of breed 'Dalmation' (true or false)
+p pets.find {|pet| pet[:breed] == "Dalmation"}
+
+p pets.any? {|pet| pet[:breed] == "Dalmation"}
+#
+# # p find_dalmation
+# ## Find the most expensive pet i.e. pet with the highest/maximum price
+
+
+pet_prices = pets.map {|pet| pet[:price]}
+most_expensive_price = pet_prices.max
+# p pet[:price]
+
+expensive_pet = pets.find {|pet| pet[:price] == most_expensive_price}
+p = expensive_pet
+# ## Find the total value (price) of all of the pets added together.
+prices = pets.map {|pet| pet[:price]}
+p prices.reduce {|total, price| total = price}
+
+## Change each pet so their price is 50% cheaper
+pets.each {|pet| pet[:price] /=2}
+p pets

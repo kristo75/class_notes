@@ -1,0 +1,23 @@
+###Day 2 notes###
+Ruby -- Database -- Web server
+HyperText Transfer Protocol - HTTP (agreed language between computers.
+Can send HTML, CSS, JS, PDF, JSON etc...)
+
+
+http://sinatrarb.com (web framework) Sinatra handles HTTP stuff.
+
+            CRUD
+POST - Creating
+GET - Read
+PUT - Update
+DELETE - Delete
+
+MVC (View, controller, model)
+-Models is Ruby code
+-View is the front end (HTML what will display to users)
+-Controller sits in the middle and acts as a middle man between
+view and model.
+
+.ERB (imbed ruby code)
+
+Yield looks to views folders only.

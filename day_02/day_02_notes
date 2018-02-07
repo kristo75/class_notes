@@ -1,0 +1,82 @@
+Class notes
+
+- What is a programming language
+
+- Understand the difference between a class and object
+A person would be a class, where as name, age, height etc... would be an object.
+
+
+
+- Write some code in IRB
+variable is my_string = "Kris Anderson"
+my_name.upcase! (! makes a permanent change, but if you don't use the ! it will only change in the first instance)
+
+Naming conventions for class names;  TestClass (camel class) or CodeClan.
+
+-User conditional operator to control behaviour
+
+-How to check equality
+
+-if, case, guard, ternary
+
+
+Ask when Ruby was created (1995)
+
+# p "When was Ruby created? "
+# year = gets.chomp.to_i
+# if (year == 1995)
+#   p "That is correct"
+# else
+#   p "Sorry, better luck next time"
+# end
+
+Case # # score = 6
+# # result = "fail"
+# # result = "pass" if (score >= 6)
+# # p result
+
+
+
+guard statement - only when one case is true.  Cant be used with an else statement.
+# hungry = true
+# tired = true
+# p "I am hangry" if tired || hungry
+
+
+-Know what a function is
+A named reusable piece of code.
+Code should be "dry"
+*Don't
+*Repeat
+*Yourself.
+
+A method is attached to a method, and not to a function.
+
+A Ruby function will always return something.
+ A parameter should always be in the function definition
+ An argument should be in the function invocation.
+ Parameters and variables should have different names
+  eg. (name) and my_name
+
+
+
+-Passing arguments to functions
+
+-Be able to write and test functions.
+
+
+#######################
+[:MINI LAB]
+>
+> 1. Create an add function
+>   - this will take two parameters
+>   - call the first parameter first_number and the second second_number
+>   - use the return keyword
+>   - Invoke the function `add( 2, 3 )`
+> 2. Create a population_density function
+>   - this will take two parameters
+>   - call the first parameter population and the second area
+>   - calculate the population density (e.g. `population / area`) and return it
+>   - invoke the function using the population and area of Mauritius:
+>     - population: 5373000
+>     - area: 77933

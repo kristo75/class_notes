@@ -1,0 +1,9 @@
+###Day 3 Notes###
+
+one to one
+one to many
+pizza_orders and customers kept separately
+many to many
+pizzas -- orders -- customers
+orders can contain many pizzas, customers can have many orders and
+customers can have many pizzas.

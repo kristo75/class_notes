@@ -1,0 +1,11 @@
+###Day 3 Notes###
+
+Action | DB method | REST action
+
+Create | save | post | create , new
+Read   |self.all & self.find(id) | get | create, index, show
+Update | update | put | update , edit
+Delete | delete & delete.all | delete | destroy
+
+
+7 restful routes  https://www.youtube.com/watch?v=RmGPASAj028

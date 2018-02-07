@@ -1,0 +1,28 @@
+##Day 4 Notes##
+
+
+One to Many
+#Inner Join
+SELECT jedi *, lightsabers * FROM jedi
+INNER JOIN lightsabers
+ON jedi.id = lightsabers.owner_id;
+
+
+
+#Left Join
+SELECT jedi.*, lightsabers.* FROM jedi
+LEFT JOIN lightsabers
+ON jedi.id = lightsabers.owner_id;
+
+
+Many to many
+#Inner join
+SELECT jedi *, lightsabers * FROM jedi
+INNER JOIN lightsabers
+ON jedi.id = lightsabers.owner_id;
+
+
+Join tables should have a relevant name to their function.
+
+ON DELETE CASCADE (allows you to delete things that are being referenced in another
+table)

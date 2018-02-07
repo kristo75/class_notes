@@ -1,0 +1,8 @@
+##Day_04_Notes##
+-Inheritance
+Java Syntax
+Super Keyword
+Overriding Inherited methods
+
+
+A super class can hold data that can be inherited by other classes.

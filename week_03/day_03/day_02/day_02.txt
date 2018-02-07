@@ -1,0 +1,11 @@
+- Understand how Ruby talks to a database.
+- Understand how an object maps to a DB row.
+- Understand how to create a single model CRUD
+ (Create, Read, Update and Delete.)
+
+MVC (Model, View, Controller)
+
+
+##
+week_03 day_02
+psql -d pizza_shop -f pizza_order 

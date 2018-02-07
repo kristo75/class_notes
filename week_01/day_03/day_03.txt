@@ -1,0 +1,10 @@
+###Wednesday notes###
+Arrays and Hashes
+What are they
+Creating Arrays
+Accessing items in Arrays
+Array methods
+
+A variable is like a block and arrays are like a collection of boxes.
+A set of spaces to store stuff.
+Count from 0 (not 1) - Index position
